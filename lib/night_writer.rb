@@ -1,11 +1,12 @@
 class NightWriter
-  attr_reader :file_path
-  def initialize(file_path)
-    @file_path = file_path
+  attr_reader :file_name, :output_name
+  def initialize(file_name, output_name)
+    @file_name = file_name
+    @output_name = output_name
   end
 
   def read_message
-    message = File.open('./data/' + file_path, "r")
+    message = File.open('./data/' + file_name, "r")
     message.read
   end
 
@@ -14,6 +15,6 @@ class NightWriter
   end
 
   def output
-    print "Created 'braille.txt' containing 256 characters."
+    print "Created '#{output_name}' containing #{char_count} characters."
   end
 end
