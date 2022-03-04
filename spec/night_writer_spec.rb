@@ -13,6 +13,6 @@ RSpec.describe 'Night Writer' do
   end
 
   it 'counts the characters in the provided message file' do
-    expect(night_writer.char_count).to eq(44)
+    expect(night_writer.char_count).to eq(43)
   end
 end

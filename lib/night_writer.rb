@@ -4,9 +4,13 @@ class NightWriter
     @file_path = file_path
   end
 
-  def read_message()
+  def read_message
     message = File.open(file_path, "r")
     message.read
+  end
+
+  def char_count
+    read_message.length
   end
 
   def output
