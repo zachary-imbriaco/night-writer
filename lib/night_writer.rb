@@ -1,9 +1,10 @@
 class NightWriter
-  def initialize(message)
-    @message = message
+  attr_reader :file_path
+  def initialize(file_path)
+    @file_path = file_path
   end
 
   def output
-    puts "Created 'braille.txt' containing 256 characters."
+    print "Created 'braille.txt' containing 256 characters."
   end
 end
