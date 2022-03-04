@@ -10,6 +10,9 @@ RSpec.describe 'Night Writer' do
 
   it 'reads the provided message file' do
     expect(night_writer.read_message).to eq 'the quick brown fox jumps over the lazy dog'
+  end
 
+  it 'counts the characters in the provided message file' do
+    expect(night_writer.char_count).to eq(44)
   end
 end
