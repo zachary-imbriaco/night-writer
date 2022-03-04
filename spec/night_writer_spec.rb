@@ -1,7 +1,8 @@
 require './lib/night_writer'
 
 RSpec.describe 'Night Writer' do
-  night_writer = NightWriter.new('./data/test_data.txt')
+  ARGV[0] = "./data/test_data.txt"
+  night_writer = NightWriter.new(ARGV[0])
 
   it 'outputs a message to CLI' do
     expect(night_writer.output).not_to eq ''
