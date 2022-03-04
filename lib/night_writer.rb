@@ -5,7 +5,7 @@ class NightWriter
   end
 
   def read_message
-    message = File.open(file_path, "r")
+    message = File.open('./data/' + file_path, "r")
     message.read
   end
 
