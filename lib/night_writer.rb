@@ -18,3 +18,6 @@ class NightWriter
     print "Created '#{output_name}' containing #{char_count} characters."
   end
 end
+
+night_writer = NightWriter.new(ARGV[0], ARGV[1])
+night_writer.output
