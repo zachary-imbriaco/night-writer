@@ -18,6 +18,12 @@ class Reader
     read_message.split("\n")
   end
 
+  def char_breaker
+    line_breaker.map do |line|
+      line.scan(/.{1,2}/)
+    end
+  end
+
   def output
     puts "Created #{output_name} file with #{read_message.length} characters."
   end
