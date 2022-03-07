@@ -33,6 +33,6 @@ RSpec.describe 'Reader' do
   end
 
   it 'turns arrays into characters based on key of the associated array in dictionary' do
-    expect(night_reader.array_to_char[0][0]).to eq 't'
+    expect(night_reader.arrays_to_chars[0][0]).to eq 't'
   end
 end

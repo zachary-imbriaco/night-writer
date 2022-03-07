@@ -51,6 +51,14 @@ class Reader
     end
   end
 
+  def arrays_to_chars
+    hashes_to_arrays.map do |line|
+      line.map do |arr|
+        braille_dict.key(arr)
+      end
+    end
+  end
+
 
   def output
     puts "Created #{output_name} file with #{read_message.length} characters."
