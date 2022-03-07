@@ -7,3 +7,4 @@ RSpec.describe 'Dictionary' do
   it 'contains a dictionary of lowercase braille letters and space' do
     expect(writer.dictionary.length).to eq 27
   end
+end
