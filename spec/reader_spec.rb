@@ -27,4 +27,8 @@ RSpec.describe 'Reader' do
   it 'turns character piece arrays into hashes with top, mid, and bot keys.' do
     expect(night_reader.pairs_to_hashes[0][0][:top]).to eq ".0"
   end
+
+  it 'turns hashes into arrays of integers based on braille_outs enum' do
+    expect(night_reader.hashes_to_arrays[0][0]).to eq [1, 3, 2]
+  end
 end
