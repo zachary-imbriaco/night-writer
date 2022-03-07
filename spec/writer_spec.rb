@@ -3,6 +3,7 @@ require './lib/writer'
 RSpec.describe 'Writer' do
   ARGV = ["test_data.txt", "braille.txt"]
   night_writer1 = Writer.new(ARGV[0], ARGV[1])
+  night_writer2 = Writer.new("single_letter_test.txt", "single_letter_output.txt")
 
   it 'outputs a message to CLI' do
     expect(night_writer1.output).not_to eq ''
@@ -37,10 +38,14 @@ RSpec.describe 'Writer' do
 
   it 'translates english statements to braille' do
     night_writer1.translate
-    output = File.open('./data/braille.txt', "r")
-    expected = File.open('./data/braille_output_checker.txt', "r")
-
-    expect(output.read).to eq expected.read
+    night_writer2.translate
+    sleep(2)
+    output1 = File.open('./data/braille.txt', "r")
+    expected1 = File.open('./data/braille_output_checker.txt', "r")
+    output2 = File.open('./data/single_letter_output.txt', "r")
+    expected2 = File.open('./data/single_letter_output_checker.txt', "r")
+    expect(output1.read).to eq expected1.read
+    expect(output2.read).to eq expected2.read
   end
 
 end
