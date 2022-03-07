@@ -41,7 +41,11 @@ class Writer
   end
 
   def translate
-
+    output_file = File.open('./data/' + output_name, "w")
+    lines = braille_to_lines
+    output_file.write("#{lines[0]}
+#{lines[1]}
+#{lines[2]}")
   end
 
   def char_count

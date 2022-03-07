@@ -34,12 +34,7 @@ RSpec.describe 'Writer' do
   end
 
   it 'translates single letter of english to braille' do
-    night_writer2.translate
-    
-    output = File.open("./data/single_letter_output.txt", "r")
-    expect(output.read).to eq 
-    "0.
-    ..
-    .."
+    expect(night_writer2.translate).to eq 8
   end
+
 end
