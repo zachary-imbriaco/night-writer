@@ -40,6 +40,12 @@ class Writer
     lines
   end
 
+  def line_breaker
+    braille_to_lines.map do |line|
+      line.scan(/.{1,80}/)
+    end
+  end
+
   def translate
     output_file = File.open('./data/' + output_name, "w")
     lines = braille_to_lines
