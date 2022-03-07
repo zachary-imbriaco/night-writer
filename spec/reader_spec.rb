@@ -25,6 +25,6 @@ RSpec.describe 'Reader' do
   end
 
   it 'turns character piece arrays into hashes with top, mid, and bot keys.' do
-    expect(night_reader.pairs_to_hashes[0][:top]).to eq 1
+    expect(night_reader.pairs_to_hashes[0][0][:top]).to eq ".0"
   end
 end
