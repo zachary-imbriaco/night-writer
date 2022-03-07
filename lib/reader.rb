@@ -43,6 +43,15 @@ class Reader
     end
   end
 
+  def hashes_to_arrays
+    pairs_to_hashes.map do |line|
+      line.map do |hash|
+        [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]
+      end
+    end
+  end
+
+
   def output
     puts "Created #{output_name} file with #{read_message.length} characters."
   end
