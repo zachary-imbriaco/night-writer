@@ -32,6 +32,10 @@ RSpec.describe 'Reader' do
     expect(night_reader.hashes_to_arrays[0][0]).to eq [1, 3, 2]
   end
 
+  it 'flattens array of arrays of characters' do
+    expect(night_reader.flatten_chars_arrays.length).to eq 43
+  end
+
   it 'turns arrays into characters based on key of the associated array in dictionary' do
     expect(night_reader.arrays_to_chars[0][0]).to eq 't'
   end
