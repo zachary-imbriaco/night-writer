@@ -31,4 +31,8 @@ RSpec.describe 'Reader' do
   it 'turns hashes into arrays of integers based on braille_outs enum' do
     expect(night_reader.hashes_to_arrays[0][0]).to eq [1, 3, 2]
   end
+
+  it 'turns arrays into characters based on key of the associated array in dictionary' do
+    expect(night_reader.array_to_char[0][0]).to eq 't'
+  end
 end
