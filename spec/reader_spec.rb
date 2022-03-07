@@ -20,7 +20,11 @@ RSpec.describe 'Reader' do
     expect(night_reader.char_breaker[0][0]).to eq ".0"
   end
 
+  it 'sets lines based on top, mid, and bot rows of each braille character' do
+    expect(night_reader.line_grouper.length).to eq 2
+  end
+
   it 'turns character piece arrays into hashes with top, mid, and bot keys.' do
-    expect(night_reader.pairs_to_hashes[0]).to eq {top: 1, mid: 3, bot: 2}
+    expect(night_reader.pairs_to_hashes[0][:top]).to eq 1
   end
 end

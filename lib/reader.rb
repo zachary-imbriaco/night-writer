@@ -26,7 +26,7 @@ class Reader
   end
 
   def pairs_to_hashes
-    
+    char_breaker.split(3)
   end
 
   def output
