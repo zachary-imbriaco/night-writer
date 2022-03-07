@@ -25,7 +25,7 @@ RSpec.describe 'Writer' do
   end
 
   it 'translates braille dict to braille strings' do
-    expect(night_writer1.dict_to_braille.length).to eq [3]
+    expect(night_writer1.dict_to_braille.length).to eq 3
   end
 
   it 'translates single letter of english to braille' do

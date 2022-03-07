@@ -21,7 +21,14 @@ class Writer
   end
 
   def dict_to_braille
-    
+    dict_array = message_to_dict
+    rows = {top: [], mid: [], bot: []}
+    dict_array.each do |arr|
+      rows[:top] << braille_outs[arr[0]]
+      rows[:mid] << braille_outs[arr[1]]
+      rows[:bot] << braille_outs[arr[2]]
+    end
+    rows
   end
   def translate
 
