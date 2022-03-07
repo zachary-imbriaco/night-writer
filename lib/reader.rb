@@ -63,6 +63,10 @@ class Reader
     arrays_to_chars.flatten
   end
 
+  def joined_translation
+    flatten_chars_arrays.join('')
+  end
+
 
   def output
     puts "Created #{output_name} file with #{read_message.length} characters."
