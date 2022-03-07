@@ -1,8 +1,8 @@
 require './lib/writer'
 
-RSpec.describe 'Night Writer' do
+RSpec.describe 'Writer' do
   ARGV = ["test_data.txt", "braille.txt"]
-  night_writer = NightWriter.new(ARGV[0], ARGV[1])
+  night_writer = Writer.new(ARGV[0], ARGV[1])
 
   it 'outputs a message to CLI' do
     expect(night_writer.output).not_to eq ''

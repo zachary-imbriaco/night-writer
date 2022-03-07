@@ -1,4 +1,4 @@
-class NightWriter
+class Writer
   attr_reader :file_name, :output_name
   def initialize(file_name, output_name)
     @file_name = file_name
