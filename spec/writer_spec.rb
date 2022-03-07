@@ -18,4 +18,9 @@ RSpec.describe 'Writer' do
   it 'counts the characters in the provided message file' do
     expect(night_writer1.char_count).to eq(43)
   end
+
+  it 'translates single letter of english to braille' do
+    night_writer2.translate
+    expect(File.open("./data/single_letter_output.txt", "r")).to eq "0....."
+  end
 end
