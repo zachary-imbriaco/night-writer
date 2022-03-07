@@ -25,13 +25,21 @@ RSpec.describe 'Writer' do
   end
 
   it 'translates braille dict to braille strings' do
-    expect(night_writer1.dict_to_braille.length).to eq 3
+    expect(night_writer1.dict_to_braille.length).to eq 43
+  end
+
+  it 'translates braille strings into line strings' do
+    expect(night_writer1.braille_to_lines.length).to eq 3
+    expect(night_writer1.braille_to_lines[0].length).to eq 86
   end
 
   it 'translates single letter of english to braille' do
     night_writer2.translate
     
     output = File.open("./data/single_letter_output.txt", "r")
-    expect(output.read).to eq "0....."
+    expect(output.read).to eq 
+    "0.
+    ..
+    .."
   end
 end
