@@ -2,10 +2,11 @@ require './lib/dictionary'
 
 class Writer
   include Dictionary
-  attr_reader :file_name, :output_name
+  attr_reader :file_name, :output_file, :output_name
   def initialize(file_name, output_name)
     @file_name = file_name
     @output_name = output_name
+    @output_file = File.open('./data/' + output_name, "w")
   end
 
   def read_message
@@ -47,7 +48,6 @@ class Writer
   end
 
   def translate
-    output_file = File.open('./data/' + output_name, "w")
     lines = line_breaker
     line_count = lines[0].length
     line_count.times do |i|
@@ -55,7 +55,7 @@ class Writer
       output_file.puts "#{line_breaker[1][i]}"
       output_file.puts "#{line_breaker[2][i]}"
     end
-    output_file
+    output_file.close
   end
 
   def char_count
