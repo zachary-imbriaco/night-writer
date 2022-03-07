@@ -13,6 +13,9 @@ class Writer
     message.read
   end
 
+  def translate
+    
+
   def char_count
     read_message.length
   end
