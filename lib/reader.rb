@@ -64,7 +64,12 @@ class Reader
   end
 
   def joined_translation
-    flatten_chars_arrays.join('')
+    p flatten_chars_arrays.join('')
+  end
+
+  def translate
+    output_file.print joined_translation
+    output_file.close
   end
 
   def output
