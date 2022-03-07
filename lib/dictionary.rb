@@ -1,6 +1,6 @@
 module Dictionary
-  def braille_dictionary
-    braille_dictionary = {
+  def braille_dict
+    {
       "a" => [2, 0, 0],
       "b" => [2, 2, 0],
       "c" => [3, 0, 0],
@@ -29,5 +29,9 @@ module Dictionary
       "z" => [2, 1, 3],
       " " => [0, 0, 0]
     }
+  end
+
+  def braille_outs
+    ["..", ".0", "0.", "00"]
   end
 end

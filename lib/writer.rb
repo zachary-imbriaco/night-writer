@@ -2,11 +2,10 @@ require './lib/dictionary'
 
 class Writer
   include Dictionary
-  attr_reader :file_name, :output_name, :dictionary
+  attr_reader :file_name, :output_name
   def initialize(file_name, output_name)
     @file_name = file_name
     @output_name = output_name
-    @dictionary = braille_dictionary
   end
 
   def read_message
