@@ -1,4 +1,4 @@
-require './lib/night_writer'
+require './lib/writer'
 
 RSpec.describe 'Night Writer' do
   ARGV = ["test_data.txt", "braille.txt"]
