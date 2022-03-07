@@ -14,7 +14,11 @@ class Writer
   end
 
   def translate
-    
+    message = read_message.split('')
+    message.map do |character|
+      braille_dict[character]
+    end
+  end
 
   def char_count
     read_message.length

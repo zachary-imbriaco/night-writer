@@ -19,8 +19,13 @@ RSpec.describe 'Writer' do
     expect(night_writer1.char_count).to eq(43)
   end
 
+  it 'translates text to braille dict' do
+    expect(night_writer1.translate_to_dict.length).to eq 43
+  end
+
   it 'translates single letter of english to braille' do
     night_writer2.translate
+    
     output = File.open("./data/single_letter_output.txt", "r")
     expect(output.read).to eq "0....."
   end
