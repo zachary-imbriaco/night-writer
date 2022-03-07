@@ -11,4 +11,8 @@ RSpec.describe 'Reader' do
   it 'reads the number of characters in the input file' do
     expect(night_reader.read_message.length).to eq 43 * 6 + 6
   end
+
+  it 'breaks message into individual lines' do
+    expect(night_reader.line_breaker.length).to eq 6
+  end
 end
