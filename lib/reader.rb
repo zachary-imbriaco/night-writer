@@ -25,8 +25,12 @@ class Reader
     end
   end
 
+  def line_grouper
+    char_breaker.each_slice(3).to_a
+  end
+
   def pairs_to_hashes
-    char_breaker.split(3)
+    
   end
 
   def output
