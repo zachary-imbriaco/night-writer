@@ -8,4 +8,13 @@ class Reader
     @output_name = output_name
     @output_file = File.open("./data/#{output_name}", "w")
   end
+
+  def read_message
+    message = File.open("./data/#{file_name}", "r")
+    message.read
+  end
+
+  def output
+    puts "Created #{output_name} file with #{read_message.length} characters."
+  end
 end

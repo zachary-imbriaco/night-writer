@@ -63,6 +63,6 @@ class Writer
   end
 
   def output
-    print "Created '#{output_name}' containing #{char_count} characters."
+    puts "Created '#{output_name}' containing #{char_count} characters."
   end
 end

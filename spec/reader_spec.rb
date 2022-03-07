@@ -7,4 +7,8 @@ RSpec.describe 'Reader' do
   it 'outputs a message to CLI' do
     expect(night_reader.output).not_to eq ''
   end
+
+  it 'reads the number of characters in the input file' do
+    expect(night_reader.read_message.length).to eq 43 * 6 + 6
+  end
 end
