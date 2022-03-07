@@ -48,8 +48,14 @@ class Writer
 
   def translate
     output_file = File.open('./data/' + output_name, "w")
-    lines = braille_to_lines
-    
+    lines = line_breaker
+    line_count = lines[0].length
+    line_count.times do |i|
+      output_file.puts "#{line_breaker[0][i]}"
+      output_file.puts "#{line_breaker[1][i]}"
+      output_file.puts "#{line_breaker[2][i]}"
+    end
+    output_file
   end
 
   def char_count
