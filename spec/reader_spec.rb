@@ -15,4 +15,8 @@ RSpec.describe 'Reader' do
   it 'breaks message into individual lines' do
     expect(night_reader.line_breaker.length).to eq 6
   end
+
+  it 'breaks lines into individual character pieces' do
+    expect(night_reader.char_breaker[0][0]).to eq ".0"
+  end
 end
