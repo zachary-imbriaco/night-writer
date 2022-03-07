@@ -186,8 +186,37 @@
           null,
           null
         ]
+      },
+      "/Users/vaeliwen/turing/1module/night-writer/spec/reader_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/1module/night-writer/lib/reader.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1646683890
+    "timestamp": 1646684037
   }
 }
