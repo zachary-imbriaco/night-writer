@@ -19,4 +19,8 @@ RSpec.describe 'Reader' do
   it 'breaks lines into individual character pieces' do
     expect(night_reader.char_breaker[0][0]).to eq ".0"
   end
+
+  it 'turns character piece arrays into hashes with top, mid, and bot keys.' do
+    expect(night_reader.pairs_to_hashes[0]).to eq {top: 1, mid: 3, bot: 2}
+  end
 end

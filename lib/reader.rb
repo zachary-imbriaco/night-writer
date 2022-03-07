@@ -2,6 +2,7 @@ require './lib/dictionary'
 
 class Reader
   attr_reader :file_name, :output_name, :output_file
+  include Dictionary
 
   def initialize(file_name, output_name)
     @file_name = file_name
@@ -22,6 +23,10 @@ class Reader
     line_breaker.map do |line|
       line.scan(/.{1,2}/)
     end
+  end
+
+  def pairs_to_hashes
+    
   end
 
   def output
