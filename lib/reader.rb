@@ -14,6 +14,10 @@ class Reader
     message.read
   end
 
+  def line_breaker
+    read_message.split("\n")
+  end
+
   def output
     puts "Created #{output_name} file with #{read_message.length} characters."
   end
