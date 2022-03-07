@@ -37,6 +37,10 @@ RSpec.describe 'Writer' do
     expect(night_writer2.translate).to eq 8
   end
 
+  it 'breaks up strings correctly based on total characters' do
+    expect(night_writer1.line_breaker[0].length).to eq 2
+  end
+
   it 'translates with line breaks correctly' do
     expect(night_writer1.translate).to eq 91
   end
