@@ -13,11 +13,14 @@ class Writer
     message.read
   end
 
-  def translate
+  def message_to_dict
     message = read_message.split('')
     message.map do |character|
-      braille_dict[character]
+      braille_dict[character.downcase]
     end
+  end
+  def translate
+
   end
 
   def char_count
