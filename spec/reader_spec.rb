@@ -40,6 +40,13 @@ RSpec.describe 'Reader' do
     expect(night_reader.joined_translation.length).to eq 43
   end
 
+  it 'writes the translation into the output file.' do
+    foxjump = File.open("./data/foxjump.txt", "r")
+    expected = File.open("./data/test_data.txt", "r")
+
+    expect(foxjump.read).to eq expected.read
+  end
+
   it 'turns arrays into characters based on key of the associated array in dictionary' do
     expect(night_reader.arrays_to_chars[0][0]).to eq 't'
   end
