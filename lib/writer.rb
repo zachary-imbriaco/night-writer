@@ -19,6 +19,10 @@ class Writer
       braille_dict[character.downcase]
     end
   end
+
+  def dict_to_braille
+    
+  end
   def translate
 
   end
