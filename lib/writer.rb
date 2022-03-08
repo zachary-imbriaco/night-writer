@@ -20,8 +20,7 @@ class Writer
   end
 
   def dict_to_braille
-    message_to_dict.map { |arr|
-      braille = { top: braille_outs[arr[0]], mid: braille_outs[arr[1]], bot: braille_outs[arr[2]] } }
+    message_to_dict.map { |arr| braille = { top: braille_outs[arr[0]], mid: braille_outs[arr[1]], bot: braille_outs[arr[2]] } }
   end
 
   def braille_to_lines
