@@ -1,17 +1,17 @@
 require './lib/dictionary'
 
 class Reader
-  attr_reader :file_name, :output_name, :output_file
+  attr_reader :file_name, :output_name, :output_file, :message
   include Dictionary
 
   def initialize(file_name, output_name)
     @file_name = file_name
     @output_name = output_name
+    @message = File.open("./data/#{file_name}", "r")
     @output_file = File.open("./data/#{output_name}", "w")
   end
 
   def read_message
-    message = File.open("./data/#{file_name}", "r")
     message.read
   end
 
@@ -30,33 +30,20 @@ class Reader
   end
 
   def pairs_to_hashes
-    line_grouper.map do |line|
-      arr = []
-      line[0].length.times do |i|
-        arr << {
-          top: line[0][i],
-          mid: line[1][i],
-          bot: line[2][i]
-        }
-      end
-      arr
-    end
+    line_grouper.map { |line| arr = [] 
+      line[0].length.times { |i| arr << { top: line[0][i], mid: line[1][i], bot: line[2][i] } } 
+      arr }
   end
 
   def hashes_to_arrays
-    pairs_to_hashes.map do |line|
-      line.map do |hash|
-        [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]
-      end
-    end
+    pairs_to_hashes.map { |line| line.map { 
+      |hash| [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]
+      } 
+    }
   end
 
   def arrays_to_chars
-    hashes_to_arrays.map do |line|
-      line.map do |arr|
-        braille_dict.key(arr)
-      end
-    end
+    hashes_to_arrays.map { |line| line.map { |arr| braille_dict.key(arr) } }
   end
 
   def flatten_chars_arrays
