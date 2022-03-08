@@ -30,21 +30,16 @@ class Reader
   end
 
   def pairs_to_hashes
-    line_grouper.map do |line|
-      arr = []
-      line[0].length.times do |i|
-        arr << { top: line[0][i], mid: line[1][i], bot: line[2][i] }
-      end
-      arr
-    end
+    line_grouper.map { |line| arr = [] 
+      line[0].length.times { |i| arr << { top: line[0][i], mid: line[1][i], bot: line[2][i] } } 
+      arr }
   end
 
   def hashes_to_arrays
-    pairs_to_hashes.map do |line|
-      line.map do |hash|
-        [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]
-      end
-    end
+    pairs_to_hashes.map { |line| line.map { 
+      |hash| [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]
+      } 
+    }
   end
 
   def arrays_to_chars
