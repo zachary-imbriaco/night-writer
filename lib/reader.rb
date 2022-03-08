@@ -33,11 +33,7 @@ class Reader
     line_grouper.map do |line|
       arr = []
       line[0].length.times do |i|
-        arr << {
-          top: line[0][i],
-          mid: line[1][i],
-          bot: line[2][i]
-        }
+        arr << { top: line[0][i], mid: line[1][i], bot: line[2][i] }
       end
       arr
     end

@@ -1,7 +1,7 @@
 require './lib/reader'
 
 RSpec.describe 'Reader' do
-  ARGV = ['braille.txt', 'foxjump.txt']
+  ARGV = ['braille_output_checker.txt', 'foxjump.txt']
   night_reader = Reader.new(ARGV[0], ARGV[1])
 
   it 'outputs a message to CLI' do
