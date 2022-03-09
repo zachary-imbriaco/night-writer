@@ -1,17 +1,17 @@
 require './lib/dictionary'
 
 class Reader
-  attr_reader :file_name, :output_name, :output_file, :message
+  attr_reader :file_name, :output_name, :output_file
   include Dictionary
 
   def initialize(file_name, output_name)
     @file_name = file_name
     @output_name = output_name
-    @message = File.open("./data/#{file_name}", "r")
     @output_file = File.open("./data/#{output_name}", "w")
   end
 
   def read_message
+    message = File.open("./data/#{file_name}", "r")
     message.read
   end
 

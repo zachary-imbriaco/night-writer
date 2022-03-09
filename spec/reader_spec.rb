@@ -43,7 +43,7 @@ RSpec.describe 'Reader' do
   it 'writes the translation into the output file.' do
     night_reader.translate
     foxjump = File.open("./data/foxjump.txt", "r")
-    expected = File.open("./data/test_data.txt", "r")
+    expected = File.open("./data/test_data_2.txt", "r")
     expect(foxjump.read).to eq expected.read
   end
 
