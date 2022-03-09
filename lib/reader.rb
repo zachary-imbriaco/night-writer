@@ -1,19 +1,19 @@
-require './lib/dictionary'
+require './lib/night_object'
 
-class Reader
-  attr_reader :file_name, :output_name, :output_file, :message
-  include Dictionary
+class Reader < NightObject
+  # attr_reader :file_name, :output_name, :output_file
+  # include Dictionary
 
-  def initialize(file_name, output_name)
-    @file_name = file_name
-    @output_name = output_name
-    @message = File.open("./data/#{file_name}", "r")
-    @output_file = File.open("./data/#{output_name}", "w")
-  end
+  # def initialize(file_name, output_name)
+  #   @file_name = file_name
+  #   @output_name = output_name
+  #   @output_file = File.open("./data/#{output_name}", "w")
+  # end
 
-  def read_message
-    message.read
-  end
+  # def read_message
+  #   message = File.open("./data/#{file_name}", "r")
+  #   message.read
+  # end
 
   def line_breaker
     read_message.split("\n")
@@ -51,7 +51,7 @@ class Reader
   end
 
   def joined_translation
-    p flatten_chars_arrays.join('')
+    flatten_chars_arrays.join('')
   end
 
   def translate
@@ -59,7 +59,7 @@ class Reader
     output_file.close
   end
 
-  def output
-    puts "Created #{output_name} file with #{read_message.length} characters."
-  end
+  # def output
+  #   puts "Created #{output_name} file with #{read_message.length} characters."
+  # end
 end

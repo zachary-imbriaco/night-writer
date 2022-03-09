@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-07T16:20:01-05:00">2022-03-07T16:20:01-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-09T11:57:43-05:00">2022-03-09T11:57:43-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  99.29%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         40.67
+         45.01
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>7</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>155</b> relevant lines,
-    <span class="green"><b>155</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>140</b> relevant lines,
+    <span class="green"><b>139</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  99.29%
 </span>
 )
   </div>
@@ -82,24 +82,35 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#a863477726c942e5998e1ee9ca1ab948c77dfa5e" class="src_link" title="lib/night_object.rb">lib/night_object.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">94.44 %</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">5.06</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#fe625b6b49e589c291e60c6dfa57a11b98c76d1d" class="src_link" title="lib/reader.rb">lib/reader.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">78</td>
-            <td class="cell--number">41</td>
-            <td class="cell--number">41</td>
+            <td class="cell--number">65</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">20.37</td>
+            <td class="cell--number">32.16</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#54e7c23f75ed6235dbd6f6e40fd1baab37a9f9f8" class="src_link" title="lib/writer.rb">lib/writer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">68</td>
-            <td class="cell--number">40</td>
-            <td class="cell--number">40</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">23</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">64.50</td>
+            <td class="cell--number">109.48</td>
             
           </tr>
         
@@ -591,12 +602,12 @@
 </div>
 
       
-        <div class="source_table" id="fe625b6b49e589c291e60c6dfa57a11b98c76d1d">
+        <div class="source_table" id="a863477726c942e5998e1ee9ca1ab948c77dfa5e">
   <div class="header">
-    <h3>lib/reader.rb</h3>
+    <h3>lib/night_object.rb</h3>
     <h4>
       <span class="green">
-  100.0%
+  94.44%
 </span>
 
       lines covered
@@ -605,9 +616,9 @@
     
 
     <div class="t-line-summary">
-      <b>41</b> relevant lines.
-      <span class="green"><b>41</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>18</b> relevant lines.
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -646,7 +657,7 @@
 
             
 
-            <code class="ruby">class Reader</code>
+            <code class="ruby">class NightObject</code>
           </li>
         </div>
       
@@ -657,7 +668,7 @@
 
             
 
-            <code class="ruby">  attr_reader :file_name, :output_name, :output_file</code>
+            <code class="ruby">  include Dictionary</code>
           </li>
         </div>
       
@@ -668,7 +679,7 @@
 
             
 
-            <code class="ruby">  include Dictionary</code>
+            <code class="ruby">  attr_reader :file_name, :output_file, :output_name</code>
           </li>
         </div>
       
@@ -695,8 +706,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="8">
+            <span class="hits">4</span>
             
 
             
@@ -706,8 +717,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="9">
+            <span class="hits">4</span>
             
 
             
@@ -717,8 +728,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="4" data-linenumber="10">
+            <span class="hits">4</span>
             
 
             
@@ -761,8 +772,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="14">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="32" data-linenumber="14">
+            <span class="hits">32</span>
             
 
             
@@ -772,8 +783,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="15">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="32" data-linenumber="15">
+            <span class="hits">32</span>
             
 
             
@@ -790,6 +801,400 @@
             
 
             <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def line_breaker</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    # braille_to_lines.map { |line| line.scan(/.{1,80}/) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def char_count</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="23">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    read_message.length</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def translate</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">    p &quot;Override me!&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def output</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="31">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    puts &quot;Created &#39;#{output_name}&#39; containing #{char_count} characters.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="fe625b6b49e589c291e60c6dfa57a11b98c76d1d">
+  <div class="header">
+    <h3>lib/reader.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>25</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/night_object&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Reader &lt; NightObject</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  # attr_reader :file_name, :output_name, :output_file</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  # include Dictionary</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  # def initialize(file_name, output_name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  #   @file_name = file_name</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  #   @output_name = output_name</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  #   @output_file = File.open(&quot;./data/#{output_name}&quot;, &quot;w&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  # def read_message</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  #   message = File.open(&quot;./data/#{file_name}&quot;, &quot;r&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  #   message.read</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
@@ -970,24 +1375,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="33">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="18" data-linenumber="33">
+            <span class="hits">18</span>
             
 
             
 
-            <code class="ruby">    line_grouper.map do |line|</code>
+            <code class="ruby">    line_grouper.map { |line| arr = [] </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="34">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="270" data-linenumber="34">
+            <span class="hits">270</span>
             
 
             
 
-            <code class="ruby">      arr = []</code>
+            <code class="ruby">      line[0].length.times { |i| arr &lt;&lt; { top: line[0][i], mid: line[1][i], bot: line[2][i] } } </code>
           </li>
         </div>
       
@@ -998,18 +1403,18 @@
 
             
 
-            <code class="ruby">      line[0].length.times do |i|</code>
+            <code class="ruby">      arr }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="258" data-linenumber="36">
-            <span class="hits">258</span>
+          <li class="never" data-hits="" data-linenumber="36">
+            
             
 
             
 
-            <code class="ruby">        arr &lt;&lt; {</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1020,100 +1425,12 @@
 
             
 
-            <code class="ruby">          top: line[0][i],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">          mid: line[1][i],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
-            <code class="ruby">          bot: line[2][i]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby">        }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="12" data-linenumber="42">
-            <span class="hits">12</span>
-            
-
-            
-
-            <code class="ruby">      arr</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="43">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
+          <li class="covered" data-hits="1" data-linenumber="38">
             <span class="hits">1</span>
             
 
@@ -1124,62 +1441,51 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="47">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="15" data-linenumber="39">
+            <span class="hits">15</span>
             
 
             
 
-            <code class="ruby">    pairs_to_hashes.map do |line|</code>
+            <code class="ruby">    pairs_to_hashes.map { |line| line.map { </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="48">
-            <span class="hits">10</span>
-            
-
-            
-
-            <code class="ruby">      line.map do |hash|</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="215" data-linenumber="49">
+          <li class="covered" data-hits="215" data-linenumber="40">
             <span class="hits">215</span>
             
 
             
 
-            <code class="ruby">        [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]</code>
+            <code class="ruby">      |hash| [braille_outs.find_index(hash[:top]), braille_outs.find_index(hash[:mid]), braille_outs.find_index(hash[:bot])]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">      } </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="42">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="43">
             
             
 
@@ -1190,7 +1496,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 
@@ -1201,7 +1507,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
+          <li class="covered" data-hits="1" data-linenumber="45">
             <span class="hits">1</span>
             
 
@@ -1212,57 +1518,156 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="55">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="184" data-linenumber="46">
+            <span class="hits">184</span>
             
 
             
 
-            <code class="ruby">    hashes_to_arrays.map do |line|</code>
+            <code class="ruby">    hashes_to_arrays.map { |line| line.map { |arr| braille_dict.key(arr) } }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="56">
-            <span class="hits">8</span>
+          <li class="never" data-hits="" data-linenumber="47">
+            
             
 
             
 
-            <code class="ruby">      line.map do |arr|</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="172" data-linenumber="57">
-            <span class="hits">172</span>
+          <li class="never" data-hits="" data-linenumber="48">
+            
             
 
             
 
-            <code class="ruby">        braille_dict.key(arr)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">  def flatten_chars_arrays</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="covered" data-hits="3" data-linenumber="50">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    arrays_to_chars.flatten</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def joined_translation</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="54">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    flatten_chars_arrays.join(&#39;&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def translate</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    output_file.print joined_translation</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    output_file.close</code>
           </li>
         </div>
       
@@ -1289,24 +1694,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="62">
+            
             
 
             
 
-            <code class="ruby">  def flatten_chars_arrays</code>
+            <code class="ruby">  # def output</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="63">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="63">
+            
             
 
             
 
-            <code class="ruby">    arrays_to_chars.flatten</code>
+            <code class="ruby">  #   puts &quot;Created #{output_name} file with #{read_message.length} characters.&quot;</code>
           </li>
         </div>
       
@@ -1317,155 +1722,12 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def joined_translation</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="67">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    p flatten_chars_arrays.join(&#39;&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="70">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def translate</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="71">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    output_file.print joined_translation</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    output_file.close</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="73">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="74">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def output</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="76">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    puts &quot;Created #{output_name} file with #{read_message.length} characters.&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="77">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="78">
             
             
 
@@ -1494,8 +1756,8 @@
     
 
     <div class="t-line-summary">
-      <b>40</b> relevant lines.
-      <span class="green"><b>40</b> lines covered</span> and
+      <b>23</b> relevant lines.
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1513,7 +1775,7 @@
 
             
 
-            <code class="ruby">require &#39;./lib/dictionary&#39;</code>
+            <code class="ruby">require &#39;./lib/night_object&#39;</code>
           </li>
         </div>
       
@@ -1535,73 +1797,73 @@
 
             
 
-            <code class="ruby">class Writer</code>
+            <code class="ruby">class Writer &lt; NightObject</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="4">
+            
             
 
             
 
-            <code class="ruby">  include Dictionary</code>
+            <code class="ruby">  # include Dictionary</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="5">
+            
             
 
             
 
-            <code class="ruby">  attr_reader :file_name, :output_file, :output_name</code>
+            <code class="ruby">  # attr_reader :file_name, :output_file, :output_name</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="6">
+            
             
 
             
 
-            <code class="ruby">  def initialize(file_name, output_name)</code>
+            <code class="ruby">  # def initialize(file_name, output_name)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="7">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">    @file_name = file_name</code>
+            <code class="ruby">  #   @file_name = file_name</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="8">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">    @output_name = output_name</code>
+            <code class="ruby">  #   @output_name = output_name</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="9">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="9">
+            
             
 
             
 
-            <code class="ruby">    @output_file = File.open(&quot;./data/#{output_name}&quot;, &quot;w&quot;)</code>
+            <code class="ruby">  #   @output_file = File.open(&quot;./data/#{output_name}&quot;, &quot;w&quot;)</code>
           </li>
         </div>
       
@@ -1612,7 +1874,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
@@ -1628,35 +1890,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
+            
             
 
             
 
-            <code class="ruby">  def read_message</code>
+            <code class="ruby">  # def read_message</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="21" data-linenumber="13">
-            <span class="hits">21</span>
+          <li class="never" data-hits="" data-linenumber="13">
+            
             
 
             
 
-            <code class="ruby">    message = File.open(&quot;./data/#{file_name}&quot;, &quot;r&quot;)</code>
+            <code class="ruby">  #   message = File.open(&quot;./data/#{file_name}&quot;, &quot;r&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="21" data-linenumber="14">
-            <span class="hits">21</span>
+          <li class="never" data-hits="" data-linenumber="14">
+            
             
 
             
 
-            <code class="ruby">    message.read</code>
+            <code class="ruby">  #   message.read</code>
           </li>
         </div>
       
@@ -1667,7 +1929,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
@@ -1705,24 +1967,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="18" data-linenumber="19">
-            <span class="hits">18</span>
+          <li class="covered" data-hits="582" data-linenumber="19">
+            <span class="hits">582</span>
             
 
             
 
-            <code class="ruby">    message.map do |character|</code>
+            <code class="ruby">    message.map { |character| braille_dict[character.downcase] }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="564" data-linenumber="20">
-            <span class="hits">564</span>
+          <li class="never" data-hits="" data-linenumber="20">
+            
             
 
             
 
-            <code class="ruby">      braille_dict[character.downcase]</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1733,34 +1995,12 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
+          <li class="covered" data-hits="1" data-linenumber="22">
             <span class="hits">1</span>
             
 
@@ -1771,84 +2011,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="25">
-            <span class="hits">16</span>
+          <li class="covered" data-hits="494" data-linenumber="23">
+            <span class="hits">494</span>
             
 
             
 
-            <code class="ruby">    message_to_dict.map do |arr|</code>
+            <code class="ruby">    message_to_dict.map { |arr| braille = { top: braille_outs[arr[0]], mid: braille_outs[arr[1]], bot: braille_outs[arr[2]] } }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
-            
-
-            <code class="ruby">      braille = { </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="478" data-linenumber="27">
-            <span class="hits">478</span>
-            
-
-            
-
-            <code class="ruby">        top: braille_outs[arr[0]],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">        mid: braille_outs[arr[1]],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">        bot: braille_outs[arr[2]] </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
-            <code class="ruby">      }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -1859,7 +2033,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -1870,7 +2044,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
+          <li class="covered" data-hits="1" data-linenumber="26">
             <span class="hits">1</span>
             
 
@@ -1881,7 +2055,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="35">
+          <li class="covered" data-hits="15" data-linenumber="27">
             <span class="hits">15</span>
             
 
@@ -1892,18 +2066,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="36">
+          <li class="covered" data-hits="15" data-linenumber="28">
             <span class="hits">15</span>
             
 
             
 
-            <code class="ruby">    dict_to_braille.each do |char|</code>
+            <code class="ruby">    dict_to_braille.map! { |char|</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="435" data-linenumber="37">
+          <li class="covered" data-hits="435" data-linenumber="29">
             <span class="hits">435</span>
             
 
@@ -1914,7 +2088,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="435" data-linenumber="38">
+          <li class="covered" data-hits="435" data-linenumber="30">
             <span class="hits">435</span>
             
 
@@ -1925,7 +2099,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="435" data-linenumber="39">
+          <li class="covered" data-hits="435" data-linenumber="31">
             <span class="hits">435</span>
             
 
@@ -1936,18 +2110,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="41">
+          <li class="covered" data-hits="15" data-linenumber="33">
             <span class="hits">15</span>
             
 
@@ -1958,7 +2132,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
@@ -1969,7 +2143,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="43">
+          <li class="never" data-hits="" data-linenumber="35">
             
             
 
@@ -1980,7 +2154,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
+          <li class="covered" data-hits="1" data-linenumber="36">
             <span class="hits">1</span>
             
 
@@ -1991,40 +2165,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="45">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="52" data-linenumber="37">
+            <span class="hits">52</span>
             
 
             
 
-            <code class="ruby">    braille_to_lines.map do |line|</code>
+            <code class="ruby">    braille_to_lines.map { |line| line.scan(/.{1,80}/) }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="39" data-linenumber="46">
-            <span class="hits">39</span>
-            
-
-            
-
-            <code class="ruby">      line.scan(/.{1,80}/)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
@@ -2035,7 +2187,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
@@ -2046,7 +2198,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
+          <li class="covered" data-hits="1" data-linenumber="40">
             <span class="hits">1</span>
             
 
@@ -2057,40 +2209,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="51">
+          <li class="covered" data-hits="2" data-linenumber="41">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    lines = line_breaker</code>
+            <code class="ruby">    line_count = line_breaker[0].length</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="52">
+          <li class="covered" data-hits="2" data-linenumber="42">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    line_count = lines[0].length</code>
+            <code class="ruby">    line_count.times { |i|</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="53">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    line_count.times do |i|</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="54">
+          <li class="covered" data-hits="3" data-linenumber="43">
             <span class="hits">3</span>
             
 
@@ -2101,7 +2242,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="55">
+          <li class="covered" data-hits="3" data-linenumber="44">
             <span class="hits">3</span>
             
 
@@ -2112,29 +2253,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="56">
+          <li class="covered" data-hits="3" data-linenumber="45">
             <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">      output_file.puts &quot;#{line_breaker[2][i]}&quot;</code>
+            <code class="ruby">      output_file.puts &quot;#{line_breaker[2][i]}&quot; }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="58">
+          <li class="covered" data-hits="2" data-linenumber="46">
             <span class="hits">2</span>
             
 
@@ -2145,7 +2275,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="47">
             
             
 
@@ -2156,7 +2286,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
+          <li class="never" data-hits="" data-linenumber="48">
             
             
 
@@ -2167,40 +2297,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="49">
+            
             
 
             
 
-            <code class="ruby">  def char_count</code>
+            <code class="ruby">  # def char_count</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="62">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="50">
+            
             
 
             
 
-            <code class="ruby">    read_message.length</code>
+            <code class="ruby">  #   read_message.length</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
@@ -2211,40 +2341,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="65">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="53">
+            
             
 
             
 
-            <code class="ruby">  def output</code>
+            <code class="ruby">  # def output</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="54">
+            
             
 
             
 
-            <code class="ruby">    puts &quot;Created &#39;#{output_name}&#39; containing #{char_count} characters.&quot;</code>
+            <code class="ruby">  #   puts &quot;Created &#39;#{output_name}&#39; containing #{char_count} characters.&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="68">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -2510,7 +2640,7 @@
 
             
 
-            <code class="ruby">  ARGV = [&#39;braille.txt&#39;, &#39;foxjump.txt&#39;]</code>
+            <code class="ruby">  ARGV = [&#39;braille_output_checker.txt&#39;, &#39;foxjump.txt&#39;]</code>
           </li>
         </div>
       
@@ -2972,7 +3102,7 @@
 
             
 
-            <code class="ruby">    expected = File.open(&quot;./data/test_data.txt&quot;, &quot;r&quot;)</code>
+            <code class="ruby">    expected = File.open(&quot;./data/test_data_2.txt&quot;, &quot;r&quot;)</code>
           </li>
         </div>
       
