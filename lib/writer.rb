@@ -1,18 +1,18 @@
-require './lib/dictionary'
+require './lib/night_object'
 
-class Writer
-  include Dictionary
-  attr_reader :file_name, :output_file, :output_name
-  def initialize(file_name, output_name)
-    @file_name = file_name
-    @output_name = output_name
-    @output_file = File.open("./data/#{output_name}", "w")
-  end
+class Writer < NightObject
+  # include Dictionary
+  # attr_reader :file_name, :output_file, :output_name
+  # def initialize(file_name, output_name)
+  #   @file_name = file_name
+  #   @output_name = output_name
+  #   @output_file = File.open("./data/#{output_name}", "w")
+  # end
 
-  def read_message
-    message = File.open("./data/#{file_name}", "r")
-    message.read
-  end
+  # def read_message
+  #   message = File.open("./data/#{file_name}", "r")
+  #   message.read
+  # end
 
   def message_to_dict
     message = read_message.split('')
@@ -46,11 +46,11 @@ class Writer
     output_file.close
   end
 
-  def char_count
-    read_message.length
-  end
+  # def char_count
+  #   read_message.length
+  # end
 
-  def output
-    puts "Created '#{output_name}' containing #{char_count} characters."
-  end
+  # def output
+  #   puts "Created '#{output_name}' containing #{char_count} characters."
+  # end
 end
